@@ -2,7 +2,25 @@
 	"name": "user-avatar-menu-account",
 	"version": "1.0.0",
 	"description": "Displays the logged-in user's avatar (or icon), display name, and a customizable link (which can serve as a 'My Account' link if WooCommerce is active).",
-	"author": "The WordPress Contributors",
+	"author": "Lit ✴ Code",
 	"license": "GPL-2.0-or-later",
-	"scripts": {}
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start --webpack-copy-php",
+		"env": "wp-env"
+	},
+	"devDependencies": {
+		"@wordpress/env": "^9.0.0",
+		"@wordpress/scripts": "^26.19.0"
+	},
+	"dependencies": {
+		"@wordpress/components": "^25.14.0",
+		"@wordpress/icons": "^9.39.0"
+	}
 }
