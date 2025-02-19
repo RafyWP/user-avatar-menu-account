@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "rafy/user-avatar-menu-account",
+	"version": "1.0.0",
+	"title": "User Avatar & Menu Account",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "Displays the logged-in user's avatar (or icon), display name, and a customizable link (which can serve as a 'My Account' link if WooCommerce is active).",
+	"example": {},
+	"attributes": {
+		"size": {
+			"type": "number",
+			"default": 32
+		},
+		"radius": {
+			"type": "number",
+			"default": 16
+		},
+		"isAvatar": {
+			"type": "string",
+			"default": "yes"
+		},
+		"prefix": {
+			"type": "string",
+			"default": ""
+		},
+		"color": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"isMyAccountLink": {
+			"type": "boolean",
+			"default": true
+		},
+		"customLink": {
+			"type": "string",
+			"default": ""
+		},
+		"linkTarget": {
+			"type": "string",
+			"default": "_self"
+		}
+	},
+	"supports": {
+		"html": false,
+		"interactivity": {
+			"clientNavigation": true
+		}
+	},
+	"textdomain": "user-avatar-menu-account",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

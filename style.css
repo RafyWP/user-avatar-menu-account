@@ -1,0 +1,19 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the block editor.
+ */
+
+.wp-block-rafy-user-avatar-menu-account,
+.wp-block-rafy-user-avatar-menu-account a {
+	display: flex;
+	align-items: center;
+	gap: .5em;
+}
+
+.wp-block-rafy-user-avatar-menu-account .avatar {
+	display: flex;
+}
+
+.wp-block-rafy-user-avatar-menu-account .display-name span.name {
+	font-weight: bold;
+}

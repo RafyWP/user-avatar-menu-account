@@ -1,0 +1,7 @@
+/**
+ * The following styles get applied inside the block editor only.
+ */
+
+.wp-block-rafy-user-avatar-menu-account {
+	display: flex;
+}

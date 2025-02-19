@@ -1,0 +1,8 @@
+{
+	"name": "user-avatar-menu-account",
+	"version": "1.0.0",
+	"description": "Displays the logged-in user's avatar (or icon), display name, and a customizable link (which can serve as a 'My Account' link if WooCommerce is active).",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"scripts": {}
+}
